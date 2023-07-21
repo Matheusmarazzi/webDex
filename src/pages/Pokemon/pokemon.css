@@ -1,0 +1,94 @@
+*::first-letter{
+    text-transform: uppercase;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto';
+}
+
+.pokeContainer{
+    background-image: url('../../images/background.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pokeContent{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    background: #f0f0f0bd;
+    border-radius: 4px;
+    flex-direction:column ;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+
+}
+.sprites{
+    display: flex;
+    width: 40%;
+    height: 40%;
+}
+.imgText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+p{
+    font-size: 15px;
+}
+.pokeSprite{
+    border-radius: 4px;
+    background-color: #00000025;
+    width: 80%;
+    height: 80%;
+}
+.back{
+    background-color: #E84A44;
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 750px){
+
+    .pokeContainer{
+        width: 100%;
+        height: 800px;
+        margin-top: 50%;
+    }
+    .pokeContent{
+        margin: 1rem;
+        padding-top: 3rem;
+        flex-wrap: nowrap;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .pokeContainer{
+        padding-top: 40%;
+    }
+    .sprites{
+        width: 100%;
+        height: 100%;
+    }
+    p{
+        font-size: 15px;
+    }
+    .back{
+    background-color: #7cd5f9;
+
+    }
+
+    
+}
+
+

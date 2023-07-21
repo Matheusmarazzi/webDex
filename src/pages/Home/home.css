@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #E84A44;
+  }
+*{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto';
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    background-image: url('../../images/background.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:100vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    background-color: #f0f0f04f;
+    margin: 2px 1px;
+    border-radius: 4px;
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+    
+
+    
+}
+.card:hover{
+    transform: scale(1.2);
+}
+.link{
+    text-decoration: none;
+}
+.sprite{
+    width: 150;
+    height: 150px;
+}
+.texto{
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.pagination{
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.pagination input{
+    color: #FFF;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination h1{
+    font-size: 20px;
+    padding: 1px 2px;
+}
+.pagination button{
+    background-color: #7cd5f9;
+    padding: 1rem;
+    border-radius: 2px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.pagination button:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.pagination input{
+    text-align: center;
+    width: 10%;
+    background: none;
+}
+@media (max-width: 750px){
+    .content{
+        width: 80%;
+    }
+    .card{
+        width: 40%;
+    }
+}
