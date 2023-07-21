@@ -56,6 +56,13 @@ p{
     text-decoration: none;
     color: white;
     margin-top: 20px;
+    transition: 0.5s;
+
+}
+.back:hover{
+    background-color: #f0645f8f;
+    transition: 0.5s;
+
 }
 
 @media (max-width: 750px){
@@ -84,9 +91,11 @@ p{
         font-size: 15px;
     }
     .back{
-    background-color: #7cd5f9;
+        background-color: #7cd5f9;
+        transition: 0.5;
 
     }
+    
 
     
 }
